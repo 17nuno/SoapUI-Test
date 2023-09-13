@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="c617b4f7-7c4d-4969-95d0-a37d63ffca52" activeEnvironment="Default" name="REST Project 1" soapui-version="5.7.1" abortOnError="false" runType="SEQUENTIAL" resourceRoot="" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="TestSuite 1"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="1b12e3f0-2e28-4cd7-aacb-64036f939828" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://pokeapi.co" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>https://pokeapi.co</con:endpoint></con:endpoints><con:resource name="Pokemon" path="/api/v2/pokemon" id="8b503aea-16a9-431a-b83b-7af238137a64"><con:settings/><con:parameters><con:parameter><con:name>limit</con:name><con:value/><con:style>QUERY</con:style><con:default/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:resource name="ditto" path="pikachu" id="bebcfcd1-d8a4-4a7b-b3a0-73705456c9d7"><con:settings/><con:parameters/><con:method name="Method 1" id="8820bf5a-d210-4768-becb-2277763f3804" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:dit="https://pokeapi.co/api/v2/pokemon/ditto">dit:Response</con:element></con:representation><con:request name="Request 1" id="be78ce1c-bafb-4169-a409-c05479cdba14" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://pokeapi.co</con:endpoint><con:request/><con:originalUri>https://pokeapi.co/api/v2/pokemon/ditto</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:method name="Pokemon 1" id="cd91367a-ee37-4945-8731-b0a320b6c94f" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json; charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:pok="https://pokeapi.co/api/v2/pokemon">pok:Response</con:element></con:representation><con:request name="Request 1" id="de2bf5a9-c336-4f61-8481-bff71225e26e" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://pokeapi.co</con:endpoint><con:request/><con:originalUri>https://pokeapi.co/api/v2/pokemon</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="limit" value="5" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>limit</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite id="00f1f9aa-14cd-4684-8cbd-4802739f0c3c" name="TestSuite 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="992f06c4-9e07-4fd3-a06c-d3ca853fbad1" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Pokemon 1 - Request 1" id="865aa16c-b034-4928-ac8b-f3c6947ca843"><con:settings/><con:config service="https://pokeapi.co" resourcePath="/api/v2/pokemon" methodName="Pokemon 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Pokemon 1 - Request 1" id="de2bf5a9-c336-4f61-8481-bff71225e26e" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://pokeapi.co</con:endpoint><con:request/><con:originalUri>https://pokeapi.co/api/v2/pokemon</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="limit" value="5" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>limit</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="5b40c012-2c63-4e29-bb8a-6e00fe1d04ce"><con:settings/><con:config><script>import groovy.json.*
+import groovy.util.*
+
+//Parse JSON content in the request
+
+def request = context.response
+log.info(request)
+def parsedJson = new JsonSlurper().parseText(request).results.name
+log.info(parsedJson)
+//def parsedJson = new groovy.json.JsonSlurper().parseText(json)
+
+assert 'bulbasaur' in parsedJson</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="ff0c48ec-e815-4930-9971-39810a1bca9b" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 2" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="Method 1 - Request 1" id="a988d5e2-fe5e-4d02-9d30-3f46d53f5c6e"><con:settings/><con:config service="https://pokeapi.co" resourcePath="/api/v2/pokemon/pikachu" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Method 1 - Request 1" id="be78ce1c-bafb-4169-a409-c05479cdba14" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>https://pokeapi.co</con:endpoint><con:request/><con:originalUri>https://pokeapi.co/api/v2/pokemon/ditto</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script" id="2d755129-f12f-438c-b9a4-e46e4f368190"><con:settings/><con:config><script>import groovy.json.*
+import groovy.util.*
+
+//Parse JSON content in the request
+
+def request = context.response
+log.info(request)
+def parsedJson = new JsonSlurper().parseText(request).types.type.name
+log.info(parsedJson)
+//def parsedJson = new groovy.json.JsonSlurper().parseText(json)
+
+assert 'electric' in parsedJson</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
