@@ -52,4 +52,4 @@ def parsedJson = new JsonSlurper().parseText(request).types.type.name
 log.info(parsedJson)
 //def parsedJson = new groovy.json.JsonSlurper().parseText(json)
 
-assert 'electric' in parsedJson</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script1" id="fbbb9b59-4be6-4bb9-84d2-e23693043fc1"><con:settings/><con:config><script>log.info('commit update test')</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
+assert 'electric' in parsedJson</script></con:config></con:testStep><con:testStep type="groovy" name="Groovy Script1" id="fbbb9b59-4be6-4bb9-84d2-e23693043fc1"><con:settings/><con:config><script>log.info('commit update TESTEEE')</script></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
